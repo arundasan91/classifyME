@@ -10,19 +10,14 @@ A GUI is in active development. Also, the automation scripts are being looked in
 ### Basic Usage
 
 1. Clone the repo in both master and slave node.
-2. In Master-node (Raspberry Pi) run:
-
-        tmux new -d -s automate_prediction 'sudo sh /path/to/classifyME/src/automate_Prediction_FetchBack.sh' \; attach
-
-NOTE: To detach from the `tmux` session, press `Ctrl+B` and then press `D` to detach.
-
-3. In Slave-node (Server with Caffe) run:
+2. In Slave-node (Server with Caffe) run:
 
         tmux new -d -s automate_classification 'sudo sh /path/to/classifyME/src/automateClassification.sh' \; attach
 
-4. Once the automation scripts are up and running, to take a picture and start the pipeline, just run (in Master node):
+NOTE: To detach from the `tmux` session, press `Ctrl+B` and then press `D` to detach.
 
-        python /path/to/classifyME/capture_and_send_classifyME.py
-    This is one of the part we are adding to the GUI. There is a linux package called `cheese` to capture images. Might have to look somewhere along those lines or might add an OpenCV/Python code to view the image before taking a photo and get the classified label in the same window after a wait cycle.
+3. Once the automation scripts are up and running, to take a picture and start the pipeline, just run (in Master node):
 
-Please raise an issue if the code breaks. It is a very simple and straight forward idea now, not much development put into it at all. We are doing this project to get us aquainted with Computer Vision and automation.
+        python /path/to/classifyME/classifyME.py
+
+Please raise an issue if the code breaks. It is a very simple and straight forward idea now, not much development put into it at all. I am doing this project to get us aquainted with Computer Vision and automation.
