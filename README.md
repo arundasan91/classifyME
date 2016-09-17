@@ -12,7 +12,7 @@ A GUI is in active development. Also, the automation scripts are being looked in
 1. Clone the repo in both master and slave node.
 2. In Slave-node (Server with Caffe) run:
 
-        tmux new -d -s auto 'classifyME/src/automateClassification.sh' \; attach
+        tmux new -d -s auto 'sh classifyME/src/automateClassification.sh' \; attach
 
 NOTE: To detach from the `tmux` session, press `Ctrl+B` and then press `D` to detach. To attach back into the `tmux` session, type `tmux a -t auto`
 
