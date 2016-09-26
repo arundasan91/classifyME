@@ -5,6 +5,10 @@ Capture a picture (Using a camera module) in master node (read Raspberry Pi 3). 
 
 At present, whenever we take a picture in the master node, a script automatically grabs the picture and sends it over to the slave node for the heavylifting. An automated script in the slave node fetch the image and sends it through the deep-learning pipeline. The predicted labels are sent back to the master node and is presented back.
 
+Please have a look at the basic architecture:
+
+![classifyME](https://github.com/arundasan91/classifyME/raw/master/ocml_IOT.png)
+
 A GUI is in active development. Also, the automation scripts are being looked into as well. There are good scope for improvement (this is just a bare skeleton now) and we love to have collaborations.
 
 ### Basic Usage
